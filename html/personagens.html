@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ficha RPG</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <script src="../script/personagem.js" defer></script>
+    </head>
+    <body >
+        <header class="menuAdmcss">
+            <nav id="menuAdm">
+                <a id="nomeLogado" onclick="paginaPrincipal()"></a>
+                <a href="./personagens.html" id="btnPersonagens">Personagens</a>
+                <a href="./avaliacoes.html" >Avaliações</a>
+                <a href="./tabelaCadastrados.html">Usuários</a>
+                <a id="btn" class="btnadm"  onclick="btn()" style="cursor: pointer;">Sair</a>
+            </nav>
+        </header>
+        <section id="tabelaPersonagens" class="tabelas" class="admCss">
+            <h1>Tabela de Personagens</h1>
+            <p class="card">Clique no nome pare ver a ficha completa</p>
+            <table id="personagens">
+                <tbody></tbody>
+            </table>
+        </section>
+        <dialog id="personagemCompleto" class="modal">
+            <h3 style="color: black ;">Atributos do personsagem</h3>
+            <ul id="lista">
+            </ul>
+            <button onclick="personagemCompleto.close()">Fechar</button>
+        </dialog>
+        <dialog id="alteraPersonagem" class="modal">
+            <h3 style="color: black ; text-align: center;">Alterar Personagem</h3>
+                <form id="formPersonagemalteracao">
+                    <label for="nome">Nome: </label><br>
+                    <input  type="text" name="nome" id="nome"></input><br>
+                    <label for="level">Level: </label><br>
+                    <input  type="text" name="level" id="level"></input><br>
+                    <label for="classe">classe: </label><br>
+                    <input  type="text" name="classe" id="classe"></input><br>
+                    <label for="raca">Raça: </label><br>
+                    <input  type="text" name="raca" id="raca"></input><br>
+                    <label for="car">Carisma: </label><br>
+                    <input  type="text" name="car" id="car"></input><br>
+                    <label for="sab">Sabedoria: </label><br>
+                    <input  type="text" name="sab" id="sab"></input><br>
+                    <label for="int">Inteligencia: </label><br>
+                    <input  type="text" name="int" id="int"></input><br>
+                    <label for="des">Destreza: </label><br>
+                    <input  type="text" name="des" id="des"></input><br>
+                    <label for="for">Força: </label><br>
+                    <input  type="text" name="for" id="for"></input><br>
+                    <label for="const">Constituição: </label><br>
+                    <input  type="text" name="const" id="const"></input><br>
+                    <label for="vidaMax">Vida Maxima: </label><br>
+                    <input  type="text" name="vidaMax" id="vidaMax"></input><br>
+                    <label for="inici">Iniciativa: </label><br>
+                    <input  type="text" name="inici" id="inici"></input><br>
+                    <label for="classArmor">Classe de Armadura: </label><br>
+                    <input  type="text" name="classArmor" id="classArmor"></input><br>
+                    <label for="caract">Caracteristicas: </label><br>
+                    <input type="text" name="caract" id="caract">
+                    <input type="submit" value="Alterar ">
+                    <input type="reset" value="Limpar">
+                </form>
+        </dialog>
+    </body>
+</html>

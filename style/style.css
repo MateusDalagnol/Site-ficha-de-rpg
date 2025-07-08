@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#formCadastroPersonagem{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#grid form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+#grid form input[type="text"],
+#grid form input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form input[type="submit"], form input[type="reset"], button{
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url('../asset/d20.png') ;
+    background-size: 50.5px;
+    background-attachment: fixed;
+    background-color: rgb(0, 0, 0);   
+}
+
+nav {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+}
+
+.admCss{
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.5);
+    color: rgb(0, 0, 0);
+}
+.menuAdmcss {
+    position: static;
+    width: 100%;
+    background-color: #000;
+}
+
+section {
+    text-align: center;
+    margin: 0 10%;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.9);  
+}
+
+section h1{
+    font-family:cursive;
+    font-size: 2em;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 40px;
+}
+section h2, h3 {
+    font-family:cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+section p {
+    font-size: 20px;
+    padding: 5px;
+    font-family: fantasy;
+    color: rgba(255, 255, 255);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-bottom: 2px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+}
+footer p{
+    font-family: cursive;
+    color: white;
+}
+
+.tabelas table{
+    width: 100%;
+    color: white;
+    border-collapse: collapse;
+}
+
+.tabelas tr, td{
+    padding: 15px;
+    border: 1px solid white;
+}
+
+#formCadastroPersonagem input,label{
+    font-size: 20px;
+    margin: 5px;
+}
+#formCadastroPersonagem{
+    text-align: left;
+    align-content: center;
+    color: white;
+}
+#menuAdm{
+    align-items: center;
+}
+#nomeLogado {
+    font-family:cursive;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+
+#copy {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+#imgFicha {
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 500px;
+    max-height: 800px;
+}
+
+#loginMenu{
+    margin-left: auto;
+    align-content: center;
+    
+}
+
+#btnAdmin {
+    margin-right: 15px;
+}
+
+#atributos {
+    font-size: 1.5em;
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 8px;
+    display: flex;
+}
+
+#descricaoAtributos {
+    margin: auto;
+    align-content: center;
+}
+
+#atributos ul li{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    border-radius: 8px;
+    padding: 3px 8px;
+}
+
+#btnPersonagens{
+    margin-left: auto;
+}
+
+#menuAdm a{
+    margin-right: 15px;
+}
+
+#pDescricao {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    color: #ffd1d1;
+}
+#modalAvaliacao{
+    justify-content: center;
+}
+.modal{
+    background-color: white;
+    align-content: center;
+    height: 70%;
+    width: 50%;
+    position: fixed;
+    margin: auto auto;
+    padding: 5px 10px 13px 20px;
+    border-radius: 10px;
+    
+}
+
+.menuAdmcss{
+    margin-top: 0px;
+}
+
+.modal button{
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.modal input{
+    margin: 10px;
+    padding: 15px;
+    padding-right: 50%;
+    text-align: left;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, .7);
+}
+
+.diminuiMenu{
+    padding: 4px 10px 4px 10px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); 
+    margin: 0.8em;
+    padding: 0.8em;
+    border-radius: 8px;
+}
+
+.erro{
+    background-color: rgb(203, 111, 111);
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+.validar{
+    margin-bottom: 0;
+}
+.span{
+    display: none; 
+    font-size: 12px; 
+    margin: 0 0 3px 10px; 
+    color: crimson;
+}
+@media (max-width: 850px) {
+    #nomeLogado{
+        font-size: 15px;
+    }
+    .menuAdmcss nav a{
+        font-size: 1em;
+        margin: 0;
+    }
+    .menuAdmcss nav{
+        width: 100%;    
+        padding: 10px;
+        position: static;
+    }
+    #formCadastroPersonagem{
+        margin-top: 0px;
+    }
+    #descricaoAtributos p{
+        font-size: 1em;
+    }
+    #grid form {
+        grid-template-columns: 1fr 1fr;
+        }
+}
+@media(max-width:650px){
+    #descricaoAtributos p{
+        font-size: 0.8em;
+    }
+    #grid form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #nomeLogado{
+        font-size: 0.5em;
+    }
+    body{
+        max-width: 450px;
+    }
+    #atributos{
+        display: inline;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    #nomeAtributos ul li{
+        margin: 2px;
+        padding: 0;
+        font-size: 0.5em;
+        height: initial;
+        width: initial;
+    }
+    #descricaoAtributos p{
+        font-size: 1em;
+    }
+    .tabelas table td{
+        padding: 5px;
+    }
+    .tabelas table{
+        padding: 10px 0 0 0;
+        font-size: 1em;
+    }
+    .tabelas table tr td a{
+        padding: 0;
+        font-size: 1em;
+    }
+    .tabelas {
+        padding: 15px;
+        margin: 0;
+        height: 100%;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+    .modal{
+        height: 50%;
+        padding: 5px 20px 10px 10px;
+    }
+    .modal h3{
+        text-align: center;
+        font-size: 2em;
+    }
+    .modal input, .modal button{
+        align-items: center;
+        margin: 5px 5px 0px 5px;
+        padding: 5px 10px 5px 5px;
+    }
+    .modal button{
+        height: 29px;
+        width: 65px;
+        align-items: center;
+        margin: 5px;
+        padding: 5px 10px 5px 5px;
+    }
+
+    header nav a {
+        padding: 5px;
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    #nomeLogado{
+        font-size: 15px;
+        margin: auto;
+    }
+    h1{
+        font-size: 2em;
+    }
+    main section {
+        padding: 10px;
+    }
+
+    .menuAdmcss nav a{
+        font-size: 10px;
+        margin: 0;
+
+    }
+    .menuAdmcss nav{
+        width: 100%;    
+        padding: 0;
+        position: static;
+    }
+    #formCadastroPersonagem{
+        margin-top: 0px;
+    }
+    .admCss{
+        padding-top: 40px;
+        margin: 0;
+    }
+    .card {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    #imgFicha {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    
+}
+

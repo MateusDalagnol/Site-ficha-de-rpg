@@ -1,0 +1,137 @@
+<!--Mateus Dalagnol RGM 38057123-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha RPG</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/login.js" defer></script>
+    <script src="../script/script.js" defer></script>
+
+</head>
+<body id="home">
+    <header>
+        <nav>
+            <a href="#home">Home</a> 
+            <a href="#guia">Guia</a>
+            <a href="#referencia">Referência</a>
+            <div id="loginMenu">
+                <a id="btnLogin">Login</a>
+                <a id="btnAdmin">Admin</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <header>
+                <h1>Crie personagens incriveis!</h1><br>
+            </header>
+            <div class="card">
+                <p>Esse site irá ajudar voçê a dar vida aquele personagem que voçê tanto ama!</p>
+                <p>Com uma experiencia quase que completa</p>
+                <p>Definindo: Atributos - Raça - Dano - AC</p>
+                <p>Entre outros</p>
+            </div>
+            <img src="../asset/ded.jpg" alt="imagem da ficha do jogo D&D" id="imgFicha">
+        </section>
+        <section id="guia">
+            <header>
+                <h2>Atributos presentes no cadastro</h2>
+                <p>Clique em um atributo para ver sua descrição</p>
+            </header>
+            <div id="atributos">
+                <div id="nomeAtributos">
+                    <ul>
+                        <li id="bntName">Name</li>
+                        <li id="bntLevel">Level</li>
+                        <li id="bntClasse">Classe</li>
+                        <li id="bntRaca">Raça</li>
+                        <li id="bntCar">Carisma</li>
+                        <li id="bntSab">Sabedoria</li>
+                        <li id="bntInt">Inteligencia</li>
+                        <li id="bntDes">Destreza</li>
+                        <li id="bntFor">Força</li>
+                        <li id="bntConst">Constituição</li>
+                        <li id="bntVidaMax">Vida Máxima</li>
+                        <li id="bntInici">Iniciativa</li>
+                        <li id="bntClassArmor">Classe de Amadura (CA)</li>
+                        <li id="bntCaract">Caracteristicas</li>
+                    </ul>
+                </div><br>
+                <div id="descricaoAtributos">
+                    <p id="pDescricao"></p>
+                </div>
+        </div>
+        </section>
+        <section id="referencia">
+            <header>
+                <h2>Referencia</h2>
+            </header>
+            <div class="card">
+                <p>Essa pagina se baseia na crição de personagens para RPGs de mesa, 
+                    o RPG usado como base para esse site foi o Dungeons and Dragons 5°Edição,
+                    embora o site não abranja todos os atributos, à todos os necessarios para sua
+                    campanha. O D&D não é o unico RPG existente à diversos outros, que seguem 
+                    regras e historias diferentes.
+                 </p>
+            </div>
+            <h3>Dungeons and Dragons</h3>
+            <div class="card">
+                <p>Em Dungeons & Dragons, os jogadores formam um grupo de aventureiros que juntos exploram mundos
+                    de fantasia, enquanto embarcam em buscas épicas e sobem de nível de experiência. O Dungeon Master (também 
+                    conhecido como DM) é o juiz e o narrador do jogo. Não se ganha nem perde em D&D — pelo menos não da maneira convencional.
+                    Dungeons & Dragons. Em sua essência, D&D é um jogo focado em narrativas. Os dados são apenas auxiliares. Todas
+                    as decisões são tomadas por você, desde sua aparência, como você age e até o que acontece a seguir. 
+                    Atualmente contendo 5 edições a primeira sendo lançada em 1974 e a quinta edição em 2015.
+                </p>
+            </div>
+        </section>
+    </main>
+    <dialog id="loginModal" class="modal" class="modalLogin">
+        <form method="dialog">
+            <ul>
+                <li><input type="email" name="email" id="email" placeholder="E-mail"></li>
+                <li><input type="password" name="senha" id="senha" placeholder="Senha"></li>
+                <li><input type="submit" value="Enviar"></li>
+            </ul>
+            <button id="btnCadastro" onclick="abreCadastro()">Cadastro</button>
+            <button id="btnFechar">Fechar</button>
+        </form>
+    </dialog>
+    <dialog id="loginModalAdm" class="modal" class="modalAdm">
+        <form method="dialog">
+            <ul>
+                <li><input type="email" name="email" id="emailAdm" placeholder="E-mail" autocomplete="email"></li>
+                <li><input type="password" name="senha" id="senhaAdm" placeholder="Senha"></li>
+                <li><input type="submit" value="Enviar"></li>
+            </ul>
+            <button id="btnFecharAdm">Fechar</button>
+        </form>
+    </dialog>
+    <dialog id="modalCadastro" class="modal" class="modalCadastro">
+        <form id="formCadastro">
+            <ul>
+                <li><input type="text" name="nome" id="nomeCadastro" class="validar" placeholder="Nome" oninput="validaNome()"></li>
+                <span class="span">Deve conter no minimo 4 caracteres</span>
+                <li><input type="email" name="email" id="emailCadastro" class="validar" placeholder="E-mail" oninput="validaEmail()"></li>
+                <span class="span">Email não é valido</span>
+                <li><input type="password" name="senha" id="senhaCadastro" class="validar" placeholder="Senha" oninput="validaSenha()"></li>
+                <span class="span">Deve conter no minimo 6 caracter</span>
+                <li><input type="submit" value="Enviar" onclick="cadastro()"></li>
+               
+            </ul>   
+            <button id="btnFecharCadastro" onclick="fechaCadastro()">Fechar</button>
+        </form>
+    </dialog>
+    <footer>
+        <div>
+            <div class="card">
+                    <h2>contato</h2>
+            </div>
+        </div>
+        <p id="copy">Todos os direitos reservados &copy;2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha RPG</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../script/scriptAdm.js" defer></script>
+    <script src="../script/loginAdm.js" defer></script>
+</head>
+<body>
+    <header class="menuAdmcss">
+        <nav id="menuAdm" style="position: static;">
+            <a id="nomeLogado" onclick="paginaPrincipal()"></a>
+            <a href="./personagens.html" id="btnPersonagens">Personagens</a>
+            <a href="./avaliacoes.html" >Avaliações</a>
+            <a href="./tabelaCadastrados.html">Usuários</a>
+            <a id="btn" class="btnadm"  onclick="btn()" style="cursor: pointer;">Sair</a>
+        </nav>
+    </header>
+    <section class="admCss">
+        <div id="grid">
+            <form id="formCadastroPersonagem">
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input type="text" name="nome" id="nome">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="level">Level: </label>
+                    <input type="number" name="level" id="level">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="classe">Classe: </label>
+                    <input type="number" name="classe" id="classe">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="raca">Raça: </label>
+                    <input type="number" name="raca" id="raca">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="car">Carisma: </label>
+                    <input type="number" name="car" id="car">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="sab">Sabedoria: </label>
+                    <input type="number" name="sab" id="sab">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="int">Inteligência: </label>
+                    <input type="number" name="int" id="int">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="des">Destreza: </label>
+                    <input type="number" name="des" id="des">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="for">Força: </label>
+                    <input type="number" name="for" id="for">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="const">Constituição: </label>
+                    <input type="number" name="const" id="const">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="vidaMax">Vida Máxima: </label>
+                    <input type="number" name="vidaMax" id="vidaMax">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="inici">Iniciativa: </label>
+                    <input type="number" name="inici" id="inici">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="classArmor">Classe de Armadura: </label>
+                    <input type="number" name="classArmor" id="classArmor">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div>
+                    <label for="caract">Características: </label>
+                    <input type="text" name="caract" id="caract">
+                    <span class="span">Campo obrigatório</span>
+                </div>
+                
+                <div><input type="submit" onclick="cadastroPersonagem()">
+                <input type="reset" value="Limpar"></div>
+                
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
